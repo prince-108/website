@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="shortcut icon"
+      href="Assets/img/favicon.ico"
+      type="image/x-icon"
+    />
+    <title>Prince's Space</title>
+    <link rel="stylesheet" href="Assets/css/styles.css" />
+  </head>
+  <body>
+    <div class="welcome">
+      <span class="hello"></span>
+      <div class="name"><h1>I am Prince</h1></div>
+      <span class="profession"></span>
+      <br />
+      <div class="btn">
+        <a href="Pages/profile.html"><button>Explore</button></a>
+      </div>
+    </div>
+
+    <div class="hero-bg">
+      <video
+        src="Assets/img/hero-bg.mp4"
+        loop
+        autoplay
+        muted
+        id="video-bg"
+      ></video>
+    </div>
+
+    <!-- Typed JS -->
+    <script src="Assets/js/typed.min.js"></script>
+    <script>
+      var typed = new Typed(".hello", {
+        // Waits 1000ms after typing "First"
+        strings: [
+          "नमस्ते",
+          "HELLO",
+          "BONJOUR",
+          "HOLA",
+          "أهلا",
+          "வணக்கம்",
+          "শুভেচ্ছা",
+          "नमस्ते",
+          "ПРИВЕТ",
+        ],
+        typespeed: 1000,
+        backspeed: 400,
+        loop: true,
+        showCursor: false,
+      });
+    </script>
+
+    <script>
+      var typed = new Typed(".profession", {
+        // Waits 1000ms after typing "First"
+        strings: ["Web Designer", "UI | UX Designer", "UI | UX Lead"],
+        showCursor: false,
+        typespeed: 1800,
+        backDelay: 1300,
+        backspeed: 1800,
+        loop: true,
+        smartBackspace: true,
+      });
+    </script>
+  </body>
+</html>
